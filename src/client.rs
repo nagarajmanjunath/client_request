@@ -48,7 +48,7 @@ impl Client {
     
     }
 
-    pub async fn get_api<T: serde::Serialize>(
+    pub async fn get<T: serde::Serialize>(
         &self,
         request_url: &str,
         params: &T,
@@ -58,7 +58,7 @@ impl Client {
         self.call_api(builder, params).await
     }
 
-    pub async fn post_api<T: serde::Serialize>(
+    pub async fn post<T: serde::Serialize>(
         &self,
         request_url: &str,
         params: &T,
@@ -68,7 +68,7 @@ impl Client {
         self.call_api(builder, params).await
     }
 
-    pub async fn delete_api<T: serde::Serialize>(
+    pub async fn delete<T: serde::Serialize>(
         &self,
         request_url: &str,
         params: &T,

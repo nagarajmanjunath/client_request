@@ -15,6 +15,7 @@ reqwest = { version = "0.11.4", features = ["blocking", "json"] }
 thiserror = "1.0.26"
 log = "0.4.14"
 async-trait = "0.1.50"
+jsonrpc-core = "18.0.0"
 
 [dev-dependencies]
 tokio = { version = "1.9", features = ["macros"] }
