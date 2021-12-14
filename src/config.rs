@@ -12,7 +12,7 @@ pub struct Config {
     #[structopt(
         long = "client-token",
         env = "CLIENT_TOKEN",
-        about = "API key for the BitGo service"
+        about = "API key for service"
     )]
     pub token: String,
 }
